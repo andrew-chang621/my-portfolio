@@ -1,0 +1,46 @@
+* ,html, body
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+header
+{
+    background-color: darkgrey;
+    height: 112px;
+    line-height: 112px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+header nav ul li a
+{
+    padding-right: 50px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: red;
+}
+
+#profile
+{
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    width: 300px;
+    height: 300px
+}
