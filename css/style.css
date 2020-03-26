@@ -45,7 +45,8 @@ header nav ul li a:hover
     height: 300px
 }
 
-.centered
+.intro-area
 {
+    padding: 100px;
     text-align: center;
 }
