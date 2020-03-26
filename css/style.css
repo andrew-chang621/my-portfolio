@@ -2,7 +2,6 @@
 {
     margin: 0;
     padding: 0;
-
 }
 
 header
@@ -49,4 +48,59 @@ header nav ul li a:hover
 {
     padding: 100px;
     text-align: center;
+    position: relative;
+}
+
+.main-header
+{
+    margin-bottom: 75px;
+}
+
+.project-card
+{
+    position: relative;
+    background: grey;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+
+.project-card:hover, .project-card.active
+{
+    background:lightblue;
+}
+
+.project-card:hover
+{
+    transition: .6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -o-transition: .6s ease;
+    -ms-transition: .6s ease;
+}
+
+.project-card .project-icon
+{
+    position: absolute;
+    margin-left: -31px;
+    top: -31px;
+    left: 50%;
+    
+}
+
+#icon
+{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    line-height: 2;
+    color: black;
+    background: deepskyblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px skyblue;
+}
+
+.date 
+{
+    text-align: left;
 }

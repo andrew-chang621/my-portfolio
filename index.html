@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     <!-- Font Awesome icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -42,7 +42,7 @@
                 <img src="./images/profile.jpg" style="border-radius:50%" id=profile>
             </div>
             <div class="about">
-                <div class="about-header">
+                <div class="main-header">
                     <h1>About Me</h1>
                 </div>
                 <p>
@@ -53,17 +53,17 @@
                 <ul class="nav-list">
                     <li>
                         <a href="https://www.facebook.com/andrew.chang621" class="icon">
-                            <i class="fa fa-facebook-square"></i>
+                            <i class="fab fa-facebook-square"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/andrew-chang621/" class="icon">
-                            <i class="fa fa-linkedin-square"></i>
+                            <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/andrew-chang621" class="icon">
-                            <i class="fa fa-github-square"></i>
+                            <i class="fab fa-github-square"></i>
                         </a>
                     </li>
                     <li>
@@ -76,26 +76,29 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="intro-area white">
         <div class="container">
-            <div class="experience-heading">
+            <div class="main-header">
                 <h1>Work Experience</h1>
             </div>
-            <div class="experience-container">
+            <div class="timeline">
                 <ul>
                     <li class="date" id="ucb">
+                        <span class="timeline-image"><img src="images/berkeley.gif"></span>
                         <h2>Education</h2>
                         <p>
                             Started school at University of California, Berkeley intending to major in Computer Science.
                         </p>
                     </li>
                     <li class="date" id="health-tech">
+                        <span class="timeline-image"><img src=""></span>
                         <h2>Smount HealthTech</h2>
                         <p>
                             Worked as a software engineer intern for a startup.
                         </p>
                     </li>
                     <li class="date" id="ucb-ai">
+                        <span class="timeline-image"><img src=""></span>
                         <h2>University of California, Berkeley</h2>
                         <p>
                             Academic Intern for the Electrical Engineering and Computer Science department.
@@ -109,14 +112,14 @@
     <section class="intro-area white">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
+                <div class="col-sm-12 main-header">
                     <h2>Projects</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="project-card">
-                        <span></span>
+                        <span class="project-icon"><i class="fas fa-camera" id=icon></i></span>
                         <h3>Camera Slider</h3>
                         <p>
                             About Camera Slider!
@@ -125,7 +128,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="project-card">
-                        <span></span>
+                        <span class="project-icon"><img src="images/netguard-logo.png" id=icon></span>
                         <h3>NetGuard</h3>
                         <p>
                             About Camera Slider!
@@ -134,7 +137,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="project-card">
-                        <span></span>
+                        <span class="project-icon"><i class="fa fa-dumbbell" id=icon></i></span>
                         <h3>Workout Generator</h3>
                         <p>
                             About Camera Slider!
