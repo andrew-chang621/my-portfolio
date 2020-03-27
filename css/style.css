@@ -3,6 +3,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Aldrich';
+    
+    background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: white;
 }
 
 header
@@ -10,6 +20,11 @@ header
     background-color: darkgrey;
     height: 80px;
     line-height: 80px;
+}
+
+header nav
+{
+    padding-left: 100px;
 }
 
 ul
@@ -36,6 +51,7 @@ header nav ul li a:hover
     color: red;
 }
 
+
 #profile
 {
     margin: 50px auto 0px auto;
@@ -61,18 +77,36 @@ header nav ul li a:hover
 .project-card
 {
     position: relative;
-    background: grey;
-    margin: 50px 0px 0px;
+    background: lightgrey;
+    margin: 50px 20px 0px;
     text-align: center;
     padding: 70px 25px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .project-card:hover, .project-card.active
 {
     background:lightblue;
+    transform: scale(1.05);
+}
+
+.project-card:hover > .project-icon
+{
+    background:lightblue;
+    transform: scale(1.05);
 }
 
 .project-card:hover
+{
+    transition: .6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -o-transition: .6s ease;
+    -ms-transition: .6s ease;
+}
+
+.project-card:hover > .project-icon
 {
     transition: .6s ease;
     -webkit-transition: .6s ease;
@@ -87,7 +121,7 @@ header nav ul li a:hover
     margin-left: -31px;
     top: -31px;
     left: 50%;
-    
+    border-radius: 50%;
 }
 
 #icon
@@ -105,40 +139,65 @@ header nav ul li a:hover
 .timeline {
     list-style-type: none;
     position: relative;
-    text-align: left;
 }
-.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
+
+.timeline:before{
+    content: '';
+    background-color: #e7e7e7;
     height: 100%;
-    z-index: 400;
-}
-.timeline li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-.timeline li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
+    width: 15px;
+    border-radius: 10px;
+    transform: translateX(-50%);
     position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
+    left: 50%;
 }
+.timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.timeline li{
+    width: 50%;
+    padding: 0 0 30px 25px;
+    margin: 0 0 30px 20px;
+    float: right;
+    position: relative;
+    text-align: left;
+    left: 10px;
+}
+
+
+.timeline li:after{
+    content: '';
+    background-color: #734D8E;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 10px #333;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -17px;
+    top: 40%;
+}
+
+.timeline li:nth-child(even){
+    padding: 0 25px 0 0;
+    margin: 0 10px 30px 0;
+    float: left;
+    text-align: right;
+    left: -10px;
+}
+.timeline li:nth-child(even):after{
+    left: auto;
+    right:-18px;
+}
+
 
 .timeline-image
 {
     position: absolute;
-    left: 60px;
-    top: -10px;
+    left: -180px;
+    top: -40px;
 }
 
 .image

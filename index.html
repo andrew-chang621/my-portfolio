@@ -23,7 +23,7 @@
     
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <nav>
                     <ul>
@@ -46,7 +46,8 @@
                     <h1>ABOUT ME</h1>
                 </div>
                 <p>
-                    This is going to be a paragraph or two about myself.
+                    Hello! I'm Andrew, a sophomore studying Computer Science at the University of California, Berkeley. I am passionate about creating technology characterized by the intersection of
+                    efficiency. aesthetics, and entertainment. With that in mind, I am currently interested in becoming a full stack engineer, although I am also open to other realms of software engineering.
                 </p>
             </div>
             <div class="social-media">
@@ -77,7 +78,7 @@
     </section>
 
     <section class="intro-area white">
-        <div class="container">
+        <div class="container-fluid">
             <div class="main-header">
                 <h1>EXPERIENCE</h1>
             </div>
@@ -87,21 +88,27 @@
                         <span class="timeline-image"><img src="images/berkeley.gif" class="image"></span>
                         <h4>Education</h4>
                         <p>
-                            Started school at University of California, Berkeley intending to major in Computer Science.
+                            Started school at University of California, Berkeley, intending to major in Biology but ended up declaring in Computer Science!
                         </p>
                     </li>
                     <li class="date" id="health-tech">
                         <span class="timeline-image"><img src=""></span>
                         <h4>Smount HealthTech</h4>
+                        <h5>Software Engineer</h5>
                         <p>
-                            Worked as a software engineer intern for a startup, filler words filler words filler words filler.
+                            At Smount HealthTech, I worked on an android mobile health app that allows people to easily monitor the health conditions of their 
+                            family members through realtime, shareable health records that can either be updated automatically or manually. Specifically, I implemented
+                            an alert system, RabbitMQ messaging queues and an SQLite database which faciliated the secure transfer of messages and data through RSA encryption/decryption.
                         </p>
                     </li>
                     <li class="date" id="ucb-ai">
                         <span class="timeline-image"><img src=""></span>
                         <h4>University of California, Berkeley</h4>
+                        <h5>Academic Intern</h5>
                         <p>
-                            Academic Intern for the Electrical Engineering and Computer Science department.
+                            As an Academic Intern for a data structures class, I assisted in lab sections and office hours by helping groups of 20-30 students with
+                            course projects, homework, and checking off weekly lab assignments. Some of the fundamental concepts that I would help students with include k-d trees, Dijkstra's
+                            algorithm, quicksort, and more.
                         </p>
                     </li>
                 </ul>
@@ -110,7 +117,7 @@
     </section>
 
     <section class="intro-area white">
-        <div class="container">
+        <div class="container-fluiid">
             <div class="row">
                 <div class="col-sm-12 main-header">
                     <h1>PROJECTS</h1>
@@ -122,7 +129,10 @@
                         <span class="project-icon"><i class="fas fa-camera" id=icon></i></span>
                         <h3>Camera Slider</h3>
                         <p>
-                            About Camera Slider!
+                            Created a mobile-controlled camera slider that moves based on the distance and time interval set by the user on the app. All backend requests are handled by
+                            a Raspberry Pi, and a servo-motor controls the movement of the slider. The app was built using SwiftUI, and the connection between the app and the Pi was established
+                            using BLE technology. 
+
                         </p>
                     </div>
                 </div>
@@ -131,7 +141,9 @@
                         <span class="project-icon"><img src="images/netguard-logo.png" id=icon></span>
                         <h3>NetGuard</h3>
                         <p>
-                            About Camera Slider!
+                            Built an IoT security system that detects DDoS attacks and protects IoT devices by shutting down all ports, notifying the user of the attack and then uploading the attack 
+                            information to an Azure database. Users can then reconfigure the device through a custom SSH key generated by this system. Developed using Python, Docker, Azure, Twilio and
+                            Remote.it. 
                         </p>
                     </div>
                 </div>
@@ -140,7 +152,8 @@
                         <span class="project-icon"><i class="fa fa-dumbbell" id=icon></i></span>
                         <h3>Workout Generator</h3>
                         <p>
-                            About Camera Slider!
+                            Developed an iOS fitness app that generates a custom workout for the user based on the muscle groups that they select. These workouts, along with physical stats like weight and 
+                            height, are saved on Firebase. Firebase Authentication is also used to identify each user.
                         </p>
                     </div>
                 </div>
