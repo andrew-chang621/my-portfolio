@@ -28,9 +28,10 @@
             <div class="row">
                 <nav>
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Experience</a></li>
-                        <li><a href="">Projects</a></li>   
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>      
                     </ul>
                 </nav>
             </div>
@@ -43,75 +44,80 @@
         </div>
     </section>
 
-    <section class="intro-area white" id=intro>
-        <div class="container-fluid">
-            <div class="main-header">
-                <h1>ABOUT ME</h1>
-            </div>
-            <div class="about">
-                <span><img src="./images/profile.jpg" style="border-radius:50%" id=profile></span>
-                <div class="about-content">
-                    <p>
-                        Hello! I'm Andrew, a sophomore studying Computer Science at the University of California, Berkeley. I am passionate about creating technology characterized by the intersection of
-                        efficiency. aesthetics, and entertainment. With that in mind, I am currently interested in becoming a full stack engineer, although I am also open to other realms of software engineering.
-                    </p>
+    <section class="intro-area white" id=about>
+        <div class="container">
+            <div class="about-page">
+                <div class="main-header">
+                    <h1 class="floater">ABOUT ME</h1>
                 </div>
-                <div class="social-media">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="https://www.facebook.com/andrew.chang621">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/andrew-chang621/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/andrew-chang621">
-                                <i class="fab fa-github-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-envelope-square"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="about">
+                    <span><img src="./images/profile.jpg" style="border-radius:50%" id=profile></span>
+                    <div class="about-content">
+                        <p>
+                            Hello! I'm Andrew, a sophomore studying Computer Science at the University of California, Berkeley. I am passionate about creating technology characterized by the intersection of
+                            efficiency. aesthetics, and entertainment. With that in mind, I am currently interested in becoming a full stack engineer, although I am also open to other realms of software engineering.
+                        </p>
+                    </div>
+                    <div class="social-media show-on-scroll">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="https://www.facebook.com/andrew.chang621">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/andrew-chang621/">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/andrew-chang621">
+                                    <i class="fab fa-github-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-envelope-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="intro-area white">
-        <div class="container-fluid">
+    <section class="intro-area white" id=experience>
+        <div class="container">
             <div class="main-header">
-                <h1>EXPERIENCE</h1>
+                <h1 class="floater">EXPERIENCE</h1>
             </div>
             <div class="timeline">
                 <ul>
-                    <li class="date" id="ucb">
-                        <span class="timeline-image"><img src="images/berkeley.gif" class="image"></span>
-                        <h4>Education</h4>
+                    <li id="ucb">
+                        <div class="timeline-subtitle">
+                            <h4>Education &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Aug 2018<h4>
+                        </div>
                         <p>
                             Started school at University of California, Berkeley, intending to major in Biology but ended up declaring in Computer Science!
                         </p>
                     </li>
-                    <li class="date" id="health-tech">
-                        <span class="timeline-image"><img src=""></span>
-                        <h4>Smount HealthTech</h4>
-                        <h5>Software Engineer</h5>
+                    <li id="health-tech">
+                        <div class="timeline-subtitle">
+                            <h4>Smount HealthTech &emsp;&emsp;&emsp;&emsp; Jun-Sep 2019</h4>
+                            <h5>Software Engineer </h5>
+                        </div>
                         <p>
                             At Smount HealthTech, I worked on an android mobile health app that allows people to easily monitor the health conditions of their 
                             family members through realtime, shareable health records that can either be updated automatically or manually. Specifically, I implemented
                             an alert system, RabbitMQ messaging queues and an SQLite database which faciliated the secure transfer of messages and data through RSA encryption/decryption.
                         </p>
                     </li>
-                    <li class="date" id="ucb-ai">
-                        <span class="timeline-image"><img src=""></span>
-                        <h4>University of California, Berkeley</h4>
-                        <h5>Academic Intern</h5>
+                    <li id="ucb-ai">
+                        <div class="timeline-subtitle">
+                            <h4>UC Berkeley &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Aug 2019-Present</h4>
+                            <h5>Academic Intern</h5>
+                        </div>
                         <p>
                             As an Academic Intern for a data structures class, I assisted in lab sections and office hours by helping groups of 20-30 students with
                             course projects, homework, and checking off weekly lab assignments. Some of the fundamental concepts that I would help students with include k-d trees, Dijkstra's
@@ -123,15 +129,15 @@
         </div>
     </section>
 
-    <section class="intro-area white">
-        <div class="container-fluiid">
+    <section class="intro-area white" id=projects>
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12 main-header">
-                    <h1>PROJECTS</h1>
+                    <h1 class="floater">PROJECTS</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4" >
                     <div class="project-card">
                         <span class="project-icon"><i class="fas fa-camera" id=icon></i></span>
                         <h3>Camera Slider</h3>
@@ -139,8 +145,9 @@
                             Created a mobile-controlled camera slider that moves based on the distance and time interval set by the user on the app. All backend requests are handled by
                             a Raspberry Pi, and a servo-motor controls the movement of the slider. The app was built using SwiftUI, and the connection between the app and the Pi was established
                             using BLE technology. 
-
                         </p>
+                        <span class="reference-icon"><i class="fab fa-python"></i></span>
+                        <span class="reference-icon"><i class="fab fa-swift"></i></span>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -152,6 +159,8 @@
                             information to an Azure database. Users can then reconfigure the device through a custom SSH key generated by this system. Developed using Python, Docker, Azure, Twilio and
                             Remote.it. 
                         </p>
+                        <span class="reference-icon"><i class="fab fa-python"></i></span>
+                        <span class="reference-icon"><i class="fab fa-docker"></i></span>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -162,11 +171,38 @@
                             Developed an iOS fitness app that generates a custom workout for the user based on the muscle groups that they select. These workouts, along with physical stats like weight and 
                             height, are saved on Firebase. Firebase Authentication is also used to identify each user.
                         </p>
+                        <span class="reference-icon"><i class="fab fa-swift"></i></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="intro-area white" id=contact>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 main-header">
+                    <h1 class="floater">CONTACT ME</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info">
+                    <h6>
+                        I am actively looking for summer 2020 Software Engineering internships. If you have such opportunities or have any questions in general, feel free to reach out to me using this form!
+                    </h6>
+                </div class="form-content">
+                    <form action="">
+                        <input type="text" class="inputs name" placeholder="Name" required>
+                        <input type="text" class="inputs email" placeholder="Email" required>
+                        <textarea name="subject" class="inputs subject" cols="10" rows="10" placeholder="Message"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
